@@ -6,7 +6,7 @@ import java.util.List;
 public class Solving {
 
     private static final int MAX_DIFF = 3;
-
+  
     public int safeReportsCount(List<List<Integer>> reports, boolean problemDampener) {
 
         int result = 0;
