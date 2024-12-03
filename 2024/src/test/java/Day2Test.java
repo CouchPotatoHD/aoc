@@ -1,4 +1,3 @@
-import com.ismaylov.day2.Report;
 import com.ismaylov.day2.Solving;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,13 +20,13 @@ public class Day2Test {
     @Test
     void safeReportsCount() {
 
-        List<Report> list = new ArrayList<>();
-        list.add(new Report(Arrays.asList(7, 6, 4, 2, 1)));
-        list.add(new Report(Arrays.asList(1, 2, 7, 8, 9)));
-        list.add(new Report(Arrays.asList(9, 7, 6, 2, 1)));
-        list.add(new Report(Arrays.asList(1, 3, 2, 4, 5)));
-        list.add(new Report(Arrays.asList(8, 6, 4, 4, 1)));
-        list.add(new Report(Arrays.asList(1, 3, 6, 7, 9)));
+        List<List<Integer>> list = new ArrayList<>();
+        list.add(Arrays.asList(7, 6, 4, 2, 1));
+        list.add(Arrays.asList(1, 2, 7, 8, 9));
+        list.add(Arrays.asList(9, 7, 6, 2, 1));
+        list.add(Arrays.asList(1, 3, 2, 4, 5));
+        list.add(Arrays.asList(8, 6, 4, 4, 1));
+        list.add(Arrays.asList(1, 3, 6, 7, 9));
 
         assertThat(task.safeReportsCount(list, false)).isEqualTo(2);
 
@@ -36,13 +35,13 @@ public class Day2Test {
     @Test
     void safeReportsCountWithProblemDampener() {
 
-        List<Report> list = new ArrayList<>();
-        list.add(new Report(Arrays.asList(7, 6, 4, 2, 1)));
-        list.add(new Report(Arrays.asList(1, 2, 7, 8, 9)));
-        list.add(new Report(Arrays.asList(9, 7, 6, 2, 1)));
-        list.add(new Report(Arrays.asList(1, 3, 2, 4, 5)));
-        list.add(new Report(Arrays.asList(8, 6, 4, 4, 1)));
-        list.add(new Report(Arrays.asList(1, 3, 6, 7, 9)));
+        List<List<Integer>> list = new ArrayList<>();
+        list.add(Arrays.asList(7, 6, 4, 2, 1));
+        list.add(Arrays.asList(1, 2, 7, 8, 9));
+        list.add(Arrays.asList(9, 7, 6, 2, 1));
+        list.add(Arrays.asList(1, 3, 2, 4, 5));
+        list.add(Arrays.asList(8, 6, 4, 4, 1));
+        list.add(Arrays.asList(1, 3, 6, 7, 9));
 
 
         assertThat(task.safeReportsCount(list, true)).isEqualTo(4);

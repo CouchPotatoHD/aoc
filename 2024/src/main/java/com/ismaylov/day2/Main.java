@@ -14,14 +14,14 @@ public class Main {
 
         Solving solving = new Solving();
 
-        List<Report> list = new ArrayList<>();
+        List<List<Integer>> list = new ArrayList<>();
 
         try (BufferedReader reader = Files.newBufferedReader(Path.of("2024/src/main/resources/day2Source.txt"))) {
             reader
                     .lines()
                     .forEach(s -> {
                         String[] res = s.split("\\s+");
-                        list.add(new Report(Arrays.stream(res).mapToInt(Integer::parseInt).boxed().toList()));
+                        list.add(Arrays.stream(res).mapToInt(Integer::parseInt).boxed().toList());
                     });
 
             System.out.println("Without dampener: " + solving.safeReportsCount(list, false));

@@ -6,19 +6,19 @@ import java.util.List;
 public class Solving {
 
     private static final int MAX_DIFF = 3;
-
-    public int safeReportsCount(List<Report> reports, boolean problemDampener) {
+  
+    public int safeReportsCount(List<List<Integer>> reports, boolean problemDampener) {
 
         int result = 0;
-        for (Report report : reports) {
+        for (List<Integer> report : reports) {
             if (problemDampener) {
-                boolean safe = isSafeWithDampener(report.getValues());
+                boolean safe = isSafeWithDampener(report);
                 if (safe) {
                     System.out.println(report);
                 }
                 result += safe ? 1 : 0;
             } else {
-                result += isSafe(report.getValues()) ? 1 : 0;
+                result += isSafe(report) ? 1 : 0;
             }
         }
 
