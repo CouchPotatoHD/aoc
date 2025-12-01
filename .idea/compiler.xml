@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="2023" />
+        <module name="2025" />
         <module name="2024" />
       </profile>
     </annotationProcessing>

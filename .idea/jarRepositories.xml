@@ -2,6 +2,11 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="maven-private" />
+      <option name="name" value="maven-private" />
+      <option name="url" value="https://packages.nuxeo.com/repository/maven-private/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="nuxeo-studio" />
       <option name="name" value="nuxeo-studio" />
       <option name="url" value="https://packages.nuxeo.com/repository/maven-public" />
@@ -44,6 +49,11 @@
     <remote-repository>
       <option name="id" value="public-snapshot" />
       <option name="name" value="public-snapshot" />
+      <option name="url" value="https://packages.nuxeo.com/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nuxeo-studio" />
+      <option name="name" value="nuxeo-studio" />
       <option name="url" value="https://packages.nuxeo.com/repository/maven-public/" />
     </remote-repository>
   </component>
