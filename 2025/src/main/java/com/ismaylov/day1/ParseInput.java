@@ -24,7 +24,8 @@ public class ParseInput {
                         commands.add(command);
                     });
 
-            System.out.println("Number of times set to zero is: " + solving.getNumberOfTimesSetToZero(commands));
+            //System.out.println("Number of times set to zero is: " + solving.getNumberOfTimesSetToZero(commands));
+            System.out.println("Number of times passed zero is: " + solving.getNumberOfTimesPassedZero(commands));
 
         } catch (IOException e) {
             throw new RuntimeException(e);

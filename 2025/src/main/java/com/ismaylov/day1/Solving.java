@@ -24,4 +24,26 @@ public class Solving {
         return numberOfTimesSetToZero;
     }
 
+    public int getNumberOfTimesPassedZero(List<Command> commands){
+
+        int y = 50;
+        int numberOfTimesSetToZero = 0;
+
+        for (Command command : commands){
+            if (command.getDirection().equals("L")){
+                ClickAndCountResult result = ClickAndCount.LEFT.clickCalculation.apply(command.getDistance(), y);
+                y = result.getY();
+                numberOfTimesSetToZero += result.getLoopCount();
+            }
+            if (command.getDirection().equals("R")){
+                ClickAndCountResult result = ClickAndCount.RIGHT.clickCalculation.apply(command.getDistance(), y);
+                y = result.getY();
+                numberOfTimesSetToZero += result.getLoopCount();
+            }
+
+        }
+
+        return numberOfTimesSetToZero;
+    }
+
 }
