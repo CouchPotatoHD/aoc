@@ -33,7 +33,14 @@ public class Day3Test {
 
     @Test
     void part2() {
+        List<Bank> banks = Arrays.asList(
+                new Bank(Arrays.asList(9,8,7,6,5,4,3,2,1,1,1,1,1,1,1)),
+                new Bank(Arrays.asList(8,1,1,1,1,1,1,1,1,1,1,1,1,1,9)),
+                new Bank(Arrays.asList(2,3,4,2,3,4,2,3,4,2,3,4,2,7,8)),
+                new Bank(Arrays.asList(8,1,8,1,8,1,9,1,1,1,1,2,1,1,1))
+        );
 
+        assertThat(task.maximumJoltageWith12Digits(banks)).isEqualTo(3121910778619L);
     }
 
 }

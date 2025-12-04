@@ -26,8 +26,8 @@ public class ParseInput {
                         banks.add(bank);
                     });
 
-            System.out.println("Max joltage is: " + solving.maximumJoltage(banks));
-            //System.out.println("Number of times passed zero is: " + solving.);
+            //System.out.println("Max joltage is: " + solving.maximumJoltage(banks));
+            System.out.println("Max joltage with 12 digits is: " + solving.maximumJoltageWith12Digits(banks));
 
         } catch (IOException e) {
             throw new RuntimeException(e);
